@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Register</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+<form>
+    <h1> แบบฟอร์ม สมัครเข้าศึกษาต่อ</h1>
+    <table border="2" width="600px">
+        <tr>
+            <th>Info</th>
+            <th>User Input</th>
+        </tr>
+        <tr> <!--Row1-->
+            <td> กรอกรหัส นศ.</td>
+            <td><input type="text" name="std-id" id="" required></td>
+        </tr>
+        <tr><!--Row2-->
+            <td>กรอกชื่อ นศ.</td>
+            <td><input type="text" name="std-name" id=""></td>
+        </tr>
+        <tr><!--Row3-->
+            <td>กรอกอีเมล</td>
+            <td><input type="email" name="std-email" id="" required></td>
+        </tr>
+        <tr><!--Row4-->
+            <td>กรอกรหรัสผ่าน</td>
+            <td><input type="password" name="std-pass" id=""></td>
+        </tr>
+        <tr><!--Row5-->
+            <td>เบอร์โทรศัพท์</td>
+            <td><input type="tel" name="std-tel" id="" required></td>
+        </tr>
+        <tr><!--Row6-->
+            <td>วันเดือนปีเกิด</td>
+            <td><input type="date" name="std-date" id=""></td>
+        </tr>
+        <tr><!--Row7-->
+            <td>สีที่คุณชอบ</td>
+            <td><input type="color" name="std-color" id=""></td>
+        </tr>
+        <tr><!--Row8-->
+            <td>ส่วนสูง[100-250 CM]</td>
+            <td><input type="number" name="std-hight" id="" min="100" max="250">CM.</td>
+        </tr>
+        <tr><!--Row9-->
+            <td>น้ำหนัก[20-200 KG]</td>
+            <td><input type="number" name="std-weight" id="" min="20" max="200">KG.</td>
+        </tr>
+        <tr><!--Row10-->
+            <td>รูปภาพ หน้าตรง</td>
+            <td><input type="file" name="std-image"></td>
+        </tr>
+        <tr><!--Row11-->
+            <td>สาขาวิชา</td>
+            <td>
+                <input type="radio"  name="major" value="INET"> INET <br>
+                <input type="radio"  name="major" value="INE">  INE <br>
+                <input type="radio"  name="major" value="ITI">  ITI <br>
+                <input type="radio"  name="major" value="IT">  IT
+            </td>
+        </tr>
+        <tr><!--Row12-->
+            <td>อาหารที่ชอบ</td>
+            <td>
+                <input type="checkbox" name="food1" value="ham"> ham <br>
+                <input type="checkbox" name="food2" value="rice"> rice <br>
+                <input type="checkbox" name="food3" value="steak"> steak
+            </td>
+        </tr>
+        <tr><!--Row13-->
+            <td>ที่อยู่</td>
+            <td>
+                <textarea name="" id="" cols="30" rows="5">ที่อยุ่ปัจจุบัน</textarea>
+            </td>
+        </tr>
+        <tr><!--Row14-->
+            <td>ชั้นปี</td>
+            <td>
+                <select name="std-year">
+                    <option value="1">ปี 1</option>
+                    <option value="2">ปี 2</option>
+                    <option value="3">ปี 3</option>
+                    <option value="4">ปี 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr><!--RowN-->
+            <td>ยืนยันข้อมูล</td>
+            <td>
+                <input type="submit" name="std-submit" id="">
+                <input type="reset" name="std-cancel" value="Cancel">
+            </td>
+        </tr>
+    </table>
+
+    </form>
+</body>
+</html>
