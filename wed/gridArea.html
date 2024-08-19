@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            border-style: solid;
+        }
+       .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        .item6 {grid-area: topmenu;}
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'topmenu topmenu topmenu topmenu topmenu topmenu'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }   
+        @media only screen and (max-width: 500px) {
+            .item1 { grid-area: 1 / span 3 / 2 / 4; }
+            .item2 { grid-area: 3 / 3 / 4 / 4; }
+            .item3 { grid-area: 2 / 1 / 3 / 2; }
+            .item4 { grid-area: 2 / 2 / span 2 / 3; }
+            .item5 { grid-area: 3 / 1 / 4 / 2; }
+            .item6 { grid-area: 2 / 3 / 3 / 4; }
+        }
+    </style>
+</head>
+<body>
+    <h1>The grid-area Property</h1>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item6">Top Menu</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>
